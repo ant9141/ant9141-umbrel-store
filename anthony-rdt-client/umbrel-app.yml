@@ -2,6 +2,7 @@ manifestVersion: 1.1
 id: anthony-rdt-client
 category: media
 name: RDT-Client
+icon: icon.png
 version: "2.0.8"
 tagline: Real-Debrid Torrent Client
 description: >-
