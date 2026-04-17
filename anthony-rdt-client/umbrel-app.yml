@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: anthony-rdt-client
+category: media
+name: RDT-Client
+version: "2.0.8"
+tagline: Real-Debrid Torrent Client
+description: >-
+  A web interface for managing Real-Debrid downloads. 
+  It acts as a qBittorrent emulator, allowing you to use 
+  Real-Debrid with Radarr and Sonarr seamlessly.
+developer: rogerfar
+website: https://github.com/rogerfar/rdt-client
+repo: https://github.com/rogerfar/rdt-client
+support: https://github.com/rogerfar/rdt-client/issues
+port: 6500
+permissions:
+  - STORAGE_DOWNLOADS
+submitter: Anthony Wray
