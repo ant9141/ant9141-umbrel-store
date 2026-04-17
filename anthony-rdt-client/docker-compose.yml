@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: anthony-rdt-client_server_1
+      APP_PORT: 6500
+    container_name: anthony-rdt-client_app_proxy_1
+
+  server:
+    image: rogerfar/rdt-client:latest
+    restart: on-failure
+    stop_grace_period: 1m
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+    volumes:
+      - ${APP_DATA_DIR}/data:/data/db
+      - ${UMBREL_ROOT}/home/Downloads:/data/downloads # Pointing to your external HDD mount
+    container_name: anthony-rdt-client_server_1
