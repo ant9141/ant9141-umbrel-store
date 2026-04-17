@@ -16,6 +16,6 @@ services:
       - PGID=1000
       - TZ=America/Chicago
     volumes:
-      - ${APP_DATA_DIR}/data:/data/db
+      - ${APP_DATA_DIR}/data:/data
       - ${UMBREL_ROOT}/home/Downloads:/data/downloads # Pointing to your external HDD mount
     container_name: anthony-rdt-client_server_1
