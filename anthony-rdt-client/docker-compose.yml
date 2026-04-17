@@ -8,7 +8,7 @@ services:
     container_name: anthony-rdt-client_app_proxy_1
 
   server:
-    image: rogerfar/rdt-client:latest
+    image: rogerfar/rdt-client:2.0.8@sha256:49c0c3298150495808546b5a7946808e6f6b8878472abbba79ee5d5f7e6b7d28d
     restart: on-failure
     stop_grace_period: 1m
     environment:
